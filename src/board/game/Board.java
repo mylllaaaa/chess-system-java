@@ -28,4 +28,13 @@ public class Board {
 		this.columns = columns;
 	}
 
+	public Piece piece(Integer row, Integer column) { //retorna a matriz pieces na linha row e coluna column
+		return pieces[row][column];
+	}
+	
+	public Piece piece(Position position) { //retorna a peça pela posição
+		return pieces[position.getRow()][position.getColumn()];
+	}
+	
+	
 }
